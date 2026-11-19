@@ -8,7 +8,7 @@ import Home from "./pages/Home.jsx"
 import PublicLayout from "./layout/PublicLayout.jsx"
 import About from "./pages/About.jsx"
 import Explore from "./pages/Explore.jsx"
-
+import Login from "./pages/Login.jsx"
 
 
 const router = createBrowserRouter([
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     element: <PublicLayout />,
     children: [
       {
-        path: "/Home",
+        path: "/home",
         element: <Home />
       },
 
@@ -29,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/explore",
         element: <Explore />
+      },
+
+      {
+        path: "/login",
+        element: <Login/> 
       }
     ]
   },
