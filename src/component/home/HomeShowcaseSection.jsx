@@ -10,6 +10,8 @@ import {
   ChevronRight,
   MapPin,
 } from 'lucide-react';
+import { TESTIMONIALS } from '../../data/tour data';
+
 
 const BENTO_DESTINATIONS = [
   {
@@ -62,41 +64,8 @@ const BENTO_DESTINATIONS = [
   },
 ];
 
-const TESTIMONIALS = [
-  {
-    id: 1,
-    name: 'Nadia Rahman',
-    role: 'Solo Traveler • Dhaka',
-    tour: 'Cloud Peaks of Bandarban Expedition',
-    rating: 5,
-    avatar:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
-    quote:
-      'Everything from the 4x4 hill transfers to the sunrise campsite at Nilgiri was seamless. Our local guide knew hidden trails no tourist bus ever reaches.',
-  },
-  {
-    id: 2,
-    name: 'Marcus & Elena Vance',
-    role: 'Couple • London, UK',
-    tour: 'Emerald Highlands & Tea Trails',
-    rating: 5,
-    avatar:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    quote:
-      'Hands down the best-organized small-group trip we have taken in Asia. Authentic homestays, incredible regional food, and zero hidden fees.',
-  },
-  {
-    id: 3,
-    name: 'Tanvir Ahmed',
-    role: 'Photographer • Chattogram',
-    tour: 'Mangrove Safari & Royal Delta',
-    rating: 5,
-    avatar:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
-    quote:
-      'The silent wooden boat dawn cruise through the narrow mangrove creeks was pure magic. You can tell this team truly respects nature.',
-  },
-];
+
+
 
 const HomeShowcaseSection = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
